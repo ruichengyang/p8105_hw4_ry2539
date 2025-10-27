@@ -1,0 +1,57 @@
+---
+title: "Data"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+data("instacart")
+view(instacart)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+instacart |>
+  mutate(department = fct_reorder(department, order_hour_of_day)) |>
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart |>
+  group_by(department) |>
+  summarize(count = n()) |>
+  mutate(department = fct_reorder(department, count)) |>
+  plot_ly(x = ~department, y = ~count, color = ~department, type = "bar", colors = "viridis")
+
+```
+
+### Chart C
+
+```{r}
+
+instacart |>
+  group_by(department, aisle) |>
+  mutate(aisle = fct_reorder(aisle, department)) |>
+  plot_ly(
+    x = ~aisle, color = ~department, type = "histogram")
+
+```
+
