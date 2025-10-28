@@ -1,5 +1,5 @@
 ---
-title: "Data"
+title: "Data Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -13,7 +13,6 @@ library(p8105.datasets)
 
 library(plotly)
 data("instacart")
-view(instacart)
 ```
 
 Column {data-width=650}
@@ -24,8 +23,14 @@ Column {data-width=650}
 ```{r}
 
 instacart |>
-  mutate(department = fct_reorder(department, order_hour_of_day)) |>
-  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+  mutate(department = fct_reorder(department, order_hour_of_day)) |> 
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis") |>
+  layout(
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Hour of the Day Ordered"),
+    legend = list(title = list(text = "Department"))
+  )
+
 
 ```
 
@@ -39,7 +44,14 @@ instacart |>
   group_by(department) |>
   summarize(count = n()) |>
   mutate(department = fct_reorder(department, count)) |>
-  plot_ly(x = ~department, y = ~count, color = ~department, type = "bar", colors = "viridis")
+  plot_ly(x = ~department, y = ~count, 
+          color = ~department, type = "bar", colors = "viridis") |>
+  layout(
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Number of Times Ordered"),
+    legend = list(title = list(text = "Department"))
+  )
+
 
 ```
 
@@ -51,7 +63,12 @@ instacart |>
   group_by(department, aisle) |>
   mutate(aisle = fct_reorder(aisle, department)) |>
   plot_ly(
-    x = ~aisle, color = ~department, type = "histogram")
+    x = ~aisle, color = ~department, type = "histogram") |>
+  layout(
+    xaxis = list(title = "Aisle"),
+    yaxis = list(title = "Number of Times Ordered"),
+    legend = list(title = list(text = "Department"))
+  )
 
 ```
 
