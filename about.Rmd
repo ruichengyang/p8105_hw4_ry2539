@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 output: 
   html_document:
     toc: true
@@ -8,8 +8,56 @@ output:
   
 ---
 
-### About this site
+### Research Experience
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+Ford Motor Company, **June 2022 - May 2023**
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+  * Development and Application of a Semi-detailed Model for Lithium-Ion Battery Thermal Runaway Chemistry
+
+    * Participated in calculations of stoichiometry in various elementary chemical reactions
+    * Assisted in the development and validation of a semi-detailed model for thermal runaway in Lithium-ion Batteries
+
+
+Compute to Learn Honors Studio, The University of Michigan, Ann Arbor, **September 2024 - November 2024**
+
+  * Guanine-Cytosine Proton Transfer as a Dissipative Harmonic Oscillator
+  
+    * Co-Author
+    * Investigated the motion of protons according to their potential function
+
+
+Path Academics Online Research Seminar, **July 2023 - August 2023**
+
+  * Prevention of Cytokine Release Syndrome in CAR T-cell Therapy
+  
+    * Main Author
+    * Investigated the current technologies and shortcomings of CAR T-Cell therapy against malignant tumor cells
+
+
+### Work Experience
+
+The University of Michigan Physics Department, Ann Arbor, **August 2023 - April 2025**
+
+  * Learning Assistant
+  * Tutor students in Introductory Physics (Physics 140)
+  * Demonstrate mastery in kinematics, waves & simple-harmonic motion.
+
+
+### Volunteer Experience
+
+C.S. Mott Children's Hospital, Ann Arbor, **May 2024 - April 2025**
+
+  * Participate in engagement with students by playing games and cleaning used toys
+  * Assisted physical therapists
+
+### Academic Experience
+
+University of Michigan, Ann Arbor -- Bachelor of Science in Biochemistry, **August 2021 - May 2025**
+
+Columbia University, Mailman School of Public Health -- Master of Science in Biostatistics, **September 2025 -- present**
+
+### Publications
+
+Thermal Engineering, Vol. 238 **(2024)**
+  
+4th Intl. Conference on Medical Imaging, Sanitation and Biological Pharmacy **(2023)**
