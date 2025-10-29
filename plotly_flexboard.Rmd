@@ -15,10 +15,10 @@ library(plotly)
 data("instacart")
 ```
 
-Column {data-width=650}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart A
+### Plot A: Distribution of the Hour of the Day that Items in Each Department is Ordered
 
 ```{r}
 
@@ -34,10 +34,10 @@ instacart |>
 
 ```
 
-Column {data-width=350}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart B
+### Plot B: Bar Graph Displaying Number of Times Ordered for Each Department
 
 ```{r}
 instacart |>
@@ -55,7 +55,7 @@ instacart |>
 
 ```
 
-### Chart C
+### Plot C: Histogram Displaying Number of Times Each Aisle within Every Department is Ordered
 
 ```{r}
 

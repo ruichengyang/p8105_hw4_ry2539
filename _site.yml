@@ -1,9 +1,9 @@
-name: "Yay internet!"
+name: "Nice Little Website"
 output_dir: "."
 navbar:
-  title: "Home"
+  title: "Introduction"
   right:
-    - text: "About"
+    - text: "About Me"
       href: about.html
     - text: "Instacart Plots"
       href: plotly_flexboard.html

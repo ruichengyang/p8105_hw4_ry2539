@@ -1,5 +1,5 @@
 ---
-title: "Introductions"
+title: "Introduction"
 output: 
   html_document:
     toc: true
@@ -7,7 +7,7 @@ output:
     theme: cerulean
 ---
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](IMG_0151.jpeg)
 
 Hello. My name is Ruicheng Yang. I am currently an M.S. student at the Mailman School of Public Health at Columbia University, studying biostatistics. This website is a navigational tool for my professional experience, which can be seen in the about page. My contact information and my github link are also displayed on the top right side of the page.
 
